@@ -1,16 +1,15 @@
 @echo off
 color 0A
-title AI Business Data Extractor
+title AI Business Data Extractor + WhatsApp
 cls
 
 echo.
 echo ============================================
-echo   AI Business Data Extractor
-echo   Google Places + Apify + Claude AI
+echo   AI Business Data Extractor + WhatsApp
+echo   Google + Apify + WhatsApp Links
 echo ============================================
 echo.
 
-REM Check Python
 echo [1/3] Checking Python...
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
@@ -25,7 +24,6 @@ if %errorlevel% neq 0 (
 echo       Python found!
 echo.
 
-REM Install libraries
 echo [2/3] Installing libraries...
 pip install flask requests beautifulsoup4 apify-client
 if %errorlevel% neq 0 (
@@ -35,7 +33,6 @@ echo.
 echo       Libraries installed!
 echo.
 
-REM Launch app
 echo [3/3] Starting application...
 echo.
 echo ============================================
